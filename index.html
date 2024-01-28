@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Student Registration Form</title>
+</head>
+<body>
+
+    <form action="#" method="post">
+        <label for="studentName">Student Name:</label>
+        <input type="text" id="studentName" name="studentName" required>
+
+        <label for="fatherName">Father Name:</label>
+        <input type="text" id="fatherName" name="fatherName" required>
+
+        <label for="motherName">Mother Name:</label>
+        <input type="text" id="motherName" name="motherName" required>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <div class="gender-options">
+            <label for="male"><input type="radio" id="male" name="gender" value="male" required> Male</label>
+            <label for="female"><input type="radio" id="female" name="gender" value="female" required> Female</label>
+            <label for="other"><input type="radio" id="other" name="gender" value="other" required> Other</label>
+        </div>
+
+        <label for="email">Email ID:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="mobileNo">Mobile No.:</label>
+        <input type="tel" id="mobileNo" name="mobileNo" pattern="[0-9]{10}" required>
+
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="4" required></textarea>
+
+        <label for="state">State:</label>
+        <input type="text" id="state" name="state" required>
+
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" required>
+
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>
